@@ -5,28 +5,28 @@
 class Foxora < Formula
   desc "Agent terminal: fast, native CLI for running Foxora's AI agents"
   homepage "https://foxora.ai"
-  version "5.0.0"
+  version "5.0.2"
   base = "https://github.com/foxora-ai/releases/releases/download/cli-v#{version}"
 
   on_macos do
     on_arm do
       url "#{base}/foxora-aarch64-apple-darwin.tar.gz"
-      sha256 "f3d776f7e47817a3c048037316110badf12285bcd28f50c798051a66e4f8b13d"
+      sha256 "098339ef80aab9715c3c3f8b131b968b1ce2489dfceaa6fc8e79d93aa3b8d16d"
     end
     on_intel do
       url "#{base}/foxora-x86_64-apple-darwin.tar.gz"
-      sha256 "16bb415ce4e7f278cff9b53646fb60f8c76911bfbc51c9b2628d80be725ab788"
+      sha256 "b1008275327ef5b777ebda04d2bf8fc2e1e190e5d409b6cffafe1a8b757dc419"
     end
   end
 
   on_linux do
     on_arm do
       url "#{base}/foxora-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0f6e69ab5e537e174bb0c30bef17cf54abededed1301b7f4a00dbe563592c05b"
+      sha256 "65dd30a799314191f8b4242732493e8fa3b67b0f9d57ff7d645e4d20c5a6e4bc"
     end
     on_intel do
       url "#{base}/foxora-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1288b9151912a7408ff95f844106b325bbdd960d7b057f302db2ea75e2e2c696"
+      sha256 "0ffc22052302e51576c0c8cb22f317fa03215acdcf586772cbc9268d56026415"
     end
   end
 
